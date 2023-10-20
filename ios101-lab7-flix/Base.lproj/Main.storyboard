@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r00-Jb-S6c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uc0-Vl-tkf">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956.48854961832058" y="-307.04225352112678"/>
+            <point key="canvasLocation" x="1883.206106870229" y="-307.04225352112678"/>
         </scene>
         <!--Movie Details-->
         <scene sceneID="m9Q-zy-QPn">
@@ -153,13 +153,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVQ-SM-UZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1881.679389312977" y="-308.45070422535213"/>
+            <point key="canvasLocation" x="2808.3969465648852" y="-308.45070422535213"/>
         </scene>
-        <!--Item-->
+        <!--Popular-->
         <scene sceneID="c88-ii-B8m">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r00-Jb-S6c" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="i8G-ri-gmu"/>
+                    <tabBarItem key="tabBarItem" title="Popular" image="popcorn.fill" catalog="system" id="i8G-ri-gmu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="w23-6k-Os7">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -172,7 +172,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vsx-Hk-dzw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.244274809160306" y="-307.04225352112678"/>
+            <point key="canvasLocation" x="954.96183206106866" y="-307.04225352112678"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="Nsm-Z2-TdE">
@@ -245,11 +245,11 @@
             </objects>
             <point key="canvasLocation" x="956" y="420"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
         <scene sceneID="Koc-Wc-rm3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9h2-P9-4RD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="hid-oF-a7y"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart.fill" catalog="system" id="hid-oF-a7y"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="n5l-gZ-1Em">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -264,13 +264,32 @@
             </objects>
             <point key="canvasLocation" x="30" y="420"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nBb-lm-7Iv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uc0-Vl-tkf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5sR-jP-Rpn">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="r00-Jb-S6c" kind="relationship" relationship="viewControllers" id="oUK-8t-QLK"/>
+                        <segue destination="9h2-P9-4RD" kind="relationship" relationship="viewControllers" id="LjS-nY-dsl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vif-cn-Wa2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.244274809160306" y="-307.04225352112678"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="E9M-SY-9f1"/>
+        <segue reference="hfi-48-ubo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="popcorn.fill" catalog="system" width="102" height="128"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
